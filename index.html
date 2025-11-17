@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web Development Technologies Evaluation - HTML5 Demonstration">
+    <meta name="author" content="Your Name">
+    <title>HTML5 Evaluation | Web Technologies Project</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <!-- Main Page Header -->
+    <header class="site-header">
+        <div class="container">
+            <h1>Web Development Technologies Evaluation</h1>
+            <p class="subtitle">HTML5 Semantic Markup Demonstration</p>
+        </div>
+        
+        <!-- Primary Navigation -->
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#xhtml">XHTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>
+                    This project provides a comprehensive evaluation of three fundamental 
+                    web development technologies: HTML, XHTML, and CSS. Each technology 
+                    plays a crucial role in modern web development.
+                </p>
+                
+                <article class="feature-box">
+                    <h3>Project Objectives</h3>
+                    <ul>
+                        <li>Evaluate HTML structure and semantic accuracy</li>
+                        <li>Analyze XHTML compliance with strict syntax rules</li>
+                        <li>Assess CSS design consistency and responsiveness</li>
+                        <li>Compare and contrast the technologies</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- HTML Evaluation Section -->
+        <section id="html" class="content-section">
+            <div class="container">
+                <h2>HTML Evaluation</h2>
+                
+                <article>
+                    <h3>HTML5 Semantic Elements</h3>
+                    <p>
+                        HTML5 introduces semantic elements that provide meaning to the 
+                        structure of web content. These elements improve accessibility, 
+                        SEO, and code maintainability.
+                    </p>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h4>Structural Elements</h4>
+                            <ul>
+                                <li><code>&lt;header&gt;</code> - Page or section header</li>
+                                <li><code>&lt;nav&gt;</code> - Navigation links</li>
+                                <li><code>&lt;main&gt;</code> - Main content</li>
+                                <li><code>&lt;section&gt;</code> - Thematic grouping</li>
+                                <li><code>&lt;article&gt;</code> - Independent content</li>
+                                <li><code>&lt;aside&gt;</code> - Sidebar content</li>
+                                <li><code>&lt;footer&gt;</code> - Footer content</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h4>Benefits</h4>
+                            <ul>
+                                <li>Improved accessibility for screen readers</li>
+                                <li>Better SEO through clear structure</li>
+                                <li>More maintainable code</li>
+                                <li>Clear document outline</li>
+                                <li>Self-documenting markup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>Accessibility Features</h3>
+                    <p>
+                        HTML5 includes features that enhance accessibility for users 
+                        with disabilities, making web content more inclusive.
+                    </p>
+                    
+                    <!-- Example Form with Accessibility Features -->
+                    <form class="demo-form" aria-labelledby="form-title">
+                        <h4 id="form-title">Contact Form Example</h4>
+                        
+                        <div class="form-group">
+                            <label for="name">Name <span aria-label="required">*</span></label>
+                            <input type="text" id="name" name="name" required 
+                                   aria-required="true" placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email <span aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" required 
+                                   aria-required="true" placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      placeholder="Your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Submit Form</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+
+        <!-- XHTML Comparison Section -->
+        <section id="xhtml" class="content-section">
+            <div class="container">
+                <h2>XHTML Evaluation</h2>
+                
+                <article>
+                    <h3>XHTML Strict Syntax Requirements</h3>
+                    <p>
+                        XHTML reformulates HTML as XML, enforcing stricter syntax rules 
+                        that make documents more predictable and easier to process.
+                    </p>
+                    
+                    <table class="comparison-table">
+                        <caption>HTML vs XHTML Syntax Differences</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Feature</th>
+                                <th scope="col">HTML</th>
+                                <th scope="col">XHTML</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Tag Case</th>
+                                <td>Case-insensitive</td>
+                                <td>Must be lowercase</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Closing Tags</th>
+                                <td>Optional for some elements</td>
+                                <td>Required for all elements</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Empty Elements</th>
+                                <td>&lt;br&gt;, &lt;img&gt;</td>
+                                <td>&lt;br /&gt;, &lt;img /&gt;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Attributes</th>
+                                <td>Quotes optional</td>
+                                <td>Must be quoted</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Error Handling</th>
+                                <td>Browser attempts to fix</td>
+                                <td>Page breaks on error</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </section>
+
+        <!-- CSS Evaluation Section -->
+        <section id="css" class="content-section">
+            <div class="container">
+                <h2>CSS Evaluation</h2>
+                
+                <article>
+                    <h3>Design Consistency and Responsiveness</h3>
+                    <p>
+                        Modern CSS provides powerful tools for creating consistent, 
+                        responsive, and visually appealing web designs.
+                    </p>
+                    
+                    <div class="css-demo-grid">
+                        <div class="demo-card">
+                            <h4>Flexbox Layout</h4>
+                            <p>Flexible one-dimensional layout system</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>Grid Layout</h4>
+                            <p>Powerful two-dimensional layout system</p>
+                        </div>
+                        <div class="demo-card">
+                            <h4>Responsive Design</h4>
+                            <p>Adapts to different screen sizes</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>CSS Best Practices Implemented</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Design Tokens:</strong> CSS custom properties for 
+                            consistent theming
+                        </li>
+                        <li>
+                            <strong>Mobile-First Approach:</strong> Styles designed for 
+                            mobile and enhanced for larger screens
+                        </li>
+                        <li>
+                            <strong>Accessibility:</strong> Proper color contrast and 
+                            focus indicators
+                        </li>
+                        <li>
+                            <strong>Performance:</strong> Efficient selectors and optimized 
+                            CSS delivery
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section id="comparison" class="content-section">
+            <div class="container">
+                <h2>Technology Comparison</h2>
+                
+                <article>
+                    <h3>When to Use Each Technology</h3>
+                    
+                    <div class="comparison-grid">
+                        <div class="tech-card">
+                            <h4>HTML5</h4>
+                            <p><strong>Best for:</strong></p>
+                            <ul>
+                                <li>Modern web applications</li>
+                                <li>Content-focused websites</li>
+                                <li>Rapid development</li>
+                                <li>Progressive web apps</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-card">
+                            <h4>XHTML</h4>
+                            <p><strong>Best for:</strong></p>
+                            <ul>
+                                <li>XML data processing</li>
+                                <li>Strict validation requirements</li>
+                                <li>Legacy system integration</li>
+                                <li>Document transformation</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tech-card">
+                            <h4>CSS</h4>
+                            <p><strong>Essential for:</strong></p>
+                            <ul>
+                                <li>All web presentations</li>
+                                <li>Responsive layouts</li>
+                                <li>Visual consistency</li>
+                                <li>User experience design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar Content -->
+    <aside class="sidebar">
+        <div class="container">
+            <h2>Additional Resources</h2>
+            <nav aria-label="Additional resources">
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Reference</a></li>
+                    <li><a href="https://www.w3.org/TR/xhtml1/">W3C XHTML Specification</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS Reference</a></li>
+                    <li><a href="https://validator.w3.org/">W3C Markup Validator</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Page Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Web Technologies Evaluation Project</p>
+            <p>Created for [Course Name] - Final Project</p>
+            <p>
+                <a href="index.html">HTML Version</a> | 
+                <a href="index.xhtml">XHTML Version</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
